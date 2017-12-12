@@ -1,0 +1,3 @@
+[submodule "springboot-security-oauth-client"]
+	path = springboot-security-oauth-client
+	url = https://github.com/brushmyskills/spring-security-oauth2-inmemory.git

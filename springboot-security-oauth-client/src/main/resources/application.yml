@@ -1,0 +1,26 @@
+server:
+  port: 8080
+  context-path: /ui
+  session:
+    cookie:
+      name: UITOKEN
+
+
+security:
+  basic:
+    enabled: false
+  oauth2:
+    client:
+      clientId: clientId07
+      clientSecret: clientSecret07
+      #default token url created by oauth server
+      accessTokenUri: http://localhost:8081/auth/oauth/token
+      #default authorization url created by oauth server
+      userAuthorizationUri: http://localhost:8081/auth/oauth/authorize
+    resource:
+      userInfoUri: http://localhost:8081/auth/rest/resource/principal
+
+
+spring:
+  thymeleaf:
+    cache: false
